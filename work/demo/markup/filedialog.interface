@@ -1,0 +1,28 @@
+--- !rubygui.org/clairvoyance/^interface
+
+#
+# filedialog.interface
+#
+
+models:
+  - fd
+
+file_dialog: !^container
+  label: 'Please enter filename:'
+  file_selection:
+    file_tree: !^tree
+      hierarchy: fd.directory_tree
+      value: fd.directory
+    file_selection: !^selection
+      multiple: (false)
+      list: fd.file_list
+      value: fd.file_name
+    file_name: !^entry
+      value: fd.file_name
+  file_dialog_actions:
+    ok: !^action
+      label: Ok
+      callback: fd.ok
+    cancel: !^action
+      label: Cancel
+      callback: fd.cancel

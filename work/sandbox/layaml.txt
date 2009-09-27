@@ -1,0 +1,32 @@
+<xml>
+  <window id="mainWindow" title="">
+    <menubar>
+      <menu title="File">
+        <menuitem title="Quit"/>
+      </menu>
+      <menu title="Help">
+        <menuitem title="About"/>
+      </menu>
+    </menubar>
+    <body layout="grid">
+      <row>
+        <col>
+          <textarea rows="25" cols="3">
+            This is a test.
+	  </textarea>
+        </col>
+      </row>
+      <row>
+        <col>
+	  <button>Update</button>
+	</col>
+      </row>
+      <row>
+        <col>
+	  <button>Clear</button>
+	</col>
+      </row>
+    </body>
+  </window>
+</xml>
+

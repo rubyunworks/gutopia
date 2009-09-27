@@ -1,0 +1,42 @@
+ 
+--- !rubygui.org/clairvoyance/^interface
+
+#
+# filemenu.interface
+#
+
+models:
+  - fma
+
+file_menu: !^container
+  name:
+
+  uses: file_dialog
+  attribute:
+    name: file_name
+    type: string
+
+  open: !^action
+    label Open
+    index: 0
+    callback: fma.open
+    own_event: !^event
+      on: self
+      order: before
+      callback: file_dialog
+  save: !^action
+    label: Save
+    index: 1
+    callback:
+      function: fma.save
+      attribute: fma.file_name
+  save_as: !^action
+    label: Save as ...
+    index: 2
+    callback:
+      function: fma.save_as
+      attribute: fma.file_name
+  exit: !^action
+    label: Exit
+    index: 3
+    callback: fma.exit

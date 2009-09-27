@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<directory>
+  <file name="gutopia-old.rb" icon_position=""/>
+  <file name="example.rb" icon_position=""/>
+  <file name="assoc.rb" icon_position=""/>
+  <file name="example-pre.rb" icon_position=""/>
+  <file name="gutopia-romp.rb" icon_position=""/>
+  <file name="gutopia-drb.rb" icon_position=""/>
+  <file name="example-romp.rb" icon_position=""/>
+  <file name="layout.xml" icon_position="263,34" default_component="OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437"/>
+  <file name="tt.rb" icon_position="263,130"/>
+  <file name="automagical-old.rb" icon_position=""/>
+  <file name="layaml.txt" icon_position="408,130" default_component="OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437"/>
+</directory>

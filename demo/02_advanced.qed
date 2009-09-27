@@ -1,0 +1,34 @@
+GUtopIa also provides some very advanced controls.
+
+There is a Table control which can be tied directly into
+database backend such as DBI, ActiveRecord, Norma or Og (eventually).
+
+  table = GUtopIa::Table.new('clients', connection) do
+    [ 'id', 'name', 'phone' , 'email', 'sex' ]
+  end
+
+Tables can use layers just as Layouts can.
+
+  table.add do
+    [ black, red, black, black, black ]
+  end
+
+Another advanced control is the TabFolder.
+
+  tabfolder = GUtopIa::TabFolder.new do
+    [ 'Clients',     'Vendors'     ],
+    [ clients_table, vendors_table ]
+  end
+
+In this case the first row are the tab labels, and the second row
+are the tab contents.
+
+Ultimately GUtopIa will have many more advanced controls and each
+will have an abudant set of options to manipulate.
+
+Of course the most basic control is the Canvas. The Canvas is 
+generally the basis of all other controls. Of course this is
+now alwasy the case for a given backend, but it is a useful 
+perception, since techinally, almost all controls can be 
+conceptualized as as a complex of overlayed canvases organized 
+into layout grids.

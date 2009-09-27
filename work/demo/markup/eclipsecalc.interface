@@ -1,0 +1,70 @@
+
+--- !rubygui.org/clairvoyance/^interface
+
+#
+# eclipsecalc.interface
+#
+
+models:
+  - eclipse
+
+eclipse_form: !^container
+  eclipse_menu: !^container
+    file_menu:
+      file_menu_req: !^include
+        import_from: './filemenu.interface'
+        include: file_menu
+        attributes:
+          fma: eclipse
+        remove:
+          - exit
+        extend:
+          close: !^action
+            label: Close
+            index: 3
+            callback: eclipse.exit
+    help_menu: !^container
+      label: Help
+      help: !^action
+        label: Help
+        index: 0
+        callback: eclipse.help
+      about: !^action
+        label: About
+        index: 1
+        callback: eclipse.about
+  entry_frame: !^container
+    day: !^entry
+      label: Day
+      index: 0
+      value: #{Time.now.day}
+    month: !^entry
+      label: Month
+      index: 1
+      value: #{Time.now.mon}
+    year: !^entry
+      label: Year
+      index: 2
+      value: #{Time.now.year}
+  actions: !^container
+    ok: !^action
+      label: Ok
+      callback: eclipse.calc(year, month, day)
+    cancel: !^action
+      label: Cancel
+      callback: eclipse.exit
+  message: !^text
+    value: ''
+    ok_pre_event: !^event
+      on: eclipse_form.actions.ok
+      order: pre
+      value: Calculating...
+    ok_post_event: !^event
+      on: eclipse_form.actions.ok
+      order: post
+      value: >
+        Next eclipse is on the
+        #{eclipse.day}
+        of #{eclipse.mon},
+        #{eclipse.year}.
+

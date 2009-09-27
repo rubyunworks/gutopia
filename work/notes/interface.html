@@ -1,0 +1,336 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <style></style>
+  </head>
+  <body>
+
+<h2>New User Interface</h2>
+
+One of the overwhelmeing problems with user interaction with there computer is actually too much freedom.
+Not that this freedon isn't a good thing, mind you, but that users generally don't have the time, energy
+or skills to put that freedom to good use. When they do, often the results are greatly limited by
+the fact that User A operates in an incompatibly from User B. This occurs on many levels: different
+hardware platforms, different operating systems, different desktop envioronments, different applications.
+Thus system implementors, engineers, programmers and such, spend a lot of time working with
+standards and creating various means of intertoperability. In fact, arguably the Majority of time is
+spent on such "headaches". of course these headache will never go away. But they can be managed better.
+
+To do this we must really start from the highest level and work our way down. After all the goal is a
+useful and enjoyable experience for the end user. Only by defining the goal can we consider implementation.
+The Desktop Metaphor is a powerful method that allows many disperate programs/applications to coexist.
+But at the same time it tends to leave the user to juggle a great deal of tasks and decisions about their
+system and again leads to the incompatability.
+
+We are getting to a point that tecnology is beginning to go around in circles. Again and again the
+wheel is being reinvented only to end up where it started with only minor advances is speed
+and usability. Consider for instance just how many text editors exist.
+
+We lack good standards and we lack good methods of improving on those standards. The W3C for instance
+does an aweful job of it. If you've ever read an HTML manual you would think we were going backwards
+rather then forward --so much is depricated and for what?
+
+What is the function of a user interface?
+
+Data Storage
+----------------------
+File System
+Database
+
+Document Design
+---------------
+Text Editor
+Word Processor
+Typesetting (La)TeX
+Graphics Editor
+
+Communication
+-------------
+Instant Messanger
+Electronic Mail
+File Sharing
+
+Computation
+-----------
+Calculator
+Spreadsheet
+Scripts/Compilers
+
+
+
+
+
+<h2>Notes</h2>
+
+<p>Many years ago I wrote a program in Visual Basic 3.0 that utilized OLE to allow
+a "page" to contain any number of OLE objects placed anywhere within it. My example
+page contained an Excel spreadsheet, a Word document, a text document and a BMP picture.
+In essence I created a very high level, nearly WYSIWYG, markup language/designer.
+No big deal really, we can do this already with Word itself. Unfortuantely people
+find this feature rather useless simply because of version and cross-compatability issues.
+You won't be importing an OLE-laced Word document into OpenOffice for instance. Nor will
+such a document generally load well even in another Windows system, if versions differ significantly.
+It is rather a shame, really. The concept in general, if taken to another level, can infact be
+thought of as a whole operating environemt; in contrast to the traditional desktop.</p>
+
+<p>Emacs users are probably more familiar with this idea then any other group.
+Emacs is, at heart, a text editor, but it is has hyperlinks and is scriptable using a variant of the
+programming language Lisp, called ELisp. Because of it is scriptable,
+entire applications have been written for Emacs, from mail clients to Tetris clones.
+Quite amazing!</p>
+
+<p>HTML, the HyperText Markup Language, is actually not a far cry from the concept either.
+Consider each tag as a little object embedded within a larger page. And of course, with
+the loss of cross-ompatability, MS Windows even allows the embedding of OLE objects directly
+into the HTML document. Add-in Javascript and Java applets and the same idea continues to grow.</p>
+
+<p>There is a common theme here that has been approached again and again from many directions,
+in may ways. And it applies to both document-oriented applications as well as function-oriented
+applications. Many applications have added in scriptablity to allow "outside" embedding of
+data and/or function, perhaps most notabily for its clean implementation is the Gimp using PDB,
+the Procedure Database. Moreover, entire languages have been designed with the intention in mind
+such as ARexx and Lua.</p>
+
+<p>The general notions behind UNIX itself are in part based on similiar ideas. UNIX purists will
+tell you that any application should be a collection of small apps that are scripted together
+though batch shell scripts. It is an admirable ideal. But one that has fallen on hard times I'm afraid.
+The dominant paradigm today, which we are all familiar with, is the Monolithic Application
+hosted withIn the Desktop Environment (MAIDE "may-day"). And yes, I choose the accronym with all pun intended.
+But I'll get to that in a moment. This paradigm was first, developed by XEROX-Parc research,
+brought to the fore by Apple, and copied and seeming perfected by Microsoft. It took such rapid hold of the
+industry because it has two distinct advantages. First, it is easily conceptualized and implemented
+as a natural extension to the previous dominant paradigm, the Topless APplication (TAP). These are
+programs that ran independently and essentially took over the entire system after being launched from a
+Command Line Interface (CLI). Us old timers are familiar with this from using DOS or CP/M, even C64 Basic, etc.
+Secondly, and more importantly MAIDE is inherintly Graphical, by emulating a "desk" on which "things" reside.
+This fit in perfectly with File Hiearchy that had developed for data storage: data files in directories
+became documents in folders. Of course these ideas have been stretched a good bit at this point with toolbars,
+embedded mini-apps (once again), metadata, etc.
+(Quick digression: personally I still like the simplicity of the original AmigaOS Workbench)
+In fact the whole paradigm is starting to show some age.</p>
+
+<p>Emulating within the cyber realm, the way we managed data in the physical realm, makes sense. But is also
+quite appearently a first (or second) step. As we progress, and become more accustomed to cyber systems, we
+can begin to dispense with these outdated modalities. Of course we will never wholly throw such emulations
+away, since computational systems are in the end a tool of the physical world, after all. But at the
+same time if we hold to strongly to these archtypes then we limit the potentiality of these systems
+to better that world.</p>
+
+<p>So the up-shot of all this is to ask the question: is there another way?
+The answer of course is related to what I frist brought to the fore concerning embedding and scripting.
+Although, again and again, developers knock on the door of this "other way", as of yet no means of
+bringing-it-all-together has ever been realized. It is difficult --wrought with many compatability and
+implementaion issues, as expeirenced by the limited contructions so far developed.</p>
+
+<p>But I here you ask: What does this paradigm look like? Can I taste it? Can I touch it? What exactly
+are you getting at? So let me describe it for you as best I have been able to sqeeze out of my poor brain.</p>
+
+<p>Imagine your new "post-modern" computer, after booting, simply sitting there, waiting.
+On the screen may be a simply message and a cursor:<p>
+
+<pre>READY. []</pre>
+
+<p>Or, in an auditory fashion, the computer may ask "Ready to serve." And await voice commands.
+And probalby both in sync. But whatever the basic dry "personality" defaults of the computer are, it
+is simply awaiting as a blank slate. If Microsoft were to implement this
+the computer probably would ask the now infamous question: Where do you want to go today?</p>
+
+<p>Okay, great. Sound like a CLI of sorts. Now what? What is it waiting for? Well it is like a CLI but much
+more advance and more akin to an application we are all generally acustomed to.
+Every user of the internet is familiar with one application above all others. Everyone uses this application
+at one time or another and more often then not uses it a lot: the Search Engine. The search engine
+is waht we might call the primary avitar of post-modern computing enviornemt. It is essentially the first thing
+a user should interface with when sitting down to a new session. Moreover the modernized form of this enigine should
+by Natural Language (NL) enabled.</p>
+
+<p>Lets put this in perspective. Traditionally, a systems operator sat down to a computer,
+logged in to start a new session, was greated with a CLI prompt and did one of two things:
+Lauched an application, possibly directed at a specific data-file(s) or drilled down into
+the directory hiearchy in search of a particular data-file(s). In a modern Desktop
+Environment the user does essenially the same, by logging into the system to start a new session,
+then clicking on an icon or menu to either "Start" an application or to graphically drill down the
+folder hiearchy in search of particular file(s). The core procedure and end is the same, all that has
+changed in the means. Likewise for the post-modern environment.</p>
+
+<p>But there is a signifficant departure from both the traditional method and the graphical desktop method.
+The post modern system no longer has disperate appliciations and data/files organized in a hiearchy,
+at least, not from the perspective of the user.</p>
+
+<p>What I propose is an operating environment that integrates the concepts of the web-page, emacs, and
+and the declarative nature of a spreadheet, all rolled into one, using a wiki-esque scripting syntax.
+Let me refrase that: imagine markup (HTML, XML, TeX); structure: (YAML, DTD, XML-Schema), document layout
+WYSIWYG/WYSIWYM (Word/Lyx), interface layount (GTK+, QT, WCF),
+declarative definition (Visi-Calc, Excel), flexible text-based editor (Emacs, Vi),
+scriptability (Lisp, Perl, Python, Ruby, C#), managed code (JVM, CLR, Parrot, Cardinal),
+network transparency (COBRA, SOAP, RPC) and Wiki, all rolled into one.
+(just to name a few!)</p>
+
+Essentially you have an interface that interacts with the user. It can do this in various ways:
+like a traditional application, like a web page, like a game, even a voice controlled app, etc.
+This is the AVIOS (audio-visual input/ouput system) or, perhaps to an end-user, it is useful to
+think of it as an Avitar. Behind this is the text-based,
+Emacian, free-form Visi-Calc-like, HTMLish Wiki-able "script"-sheet. Catch all that? let just call
+is a ScriptSheet.
+
+<pre>
++---------------------+
+|    "Hello World!"   |
++---------------------+
+|       [ok:Ok]       |
++---------------------+
+
+self.close <- ok.click
+</pre>
+
+
+<pre>
++-----------------------+
+|   msg:"Hello World!"  |
++-----------------------+
+|  [ok:Ok]  [ex:Exit]   |
++-----------------------+
+
+msg.background = rgb(255,0,0)
+msg.text = "You clicked?" :- ok.click
+self.close :- ex.click
+</pre>
+
+
+Code Structures
+===============
+
+Machine Code to Assembly, the VonNuemanon
+
+John McCarthy certed Lisp in 1956.
+In the beginning was Lisp and RMS saw that it was good.
+
+Lisp is arguably the greatest code structure ever discoved. I say discoverd because
+it is said that should we ever encounter technologically advanced
+extraterrestrials they will undoubtedly have there own flavor of Lisp.
+Only Assembly itself is arguably more fundemental. Lisp is symbol processing, pure and simple.
+Data and Code is essentially indistinguishable. This is the real power of
+Lisp. A Lisp program can easily read and manipulate another Lisp program.
+Even itself! Thus it is said that had Godel invented Lisp he would have had a much
+easier time of it. There were even Lisp machines for awhile --computers that had
+Lisp interpreters built into hardware. I personally still drool over the thought.
+It is acually quite ironic that in a sense we have come full circle, but hit-up
+with an ugly stick, I'm afraid, as the W3C works so hard to create an extensible markup language.
+Weinaby will tell you, its been here all along.
+
+For richer or for poorer: C OOPS C++
+
+BASIC
+
+Functions and Relations, Procedure and Logic: Visi-Calc and Prolog
+
+Compiled vs. Interpreted
+
+Scripting
+
+
+Data Structures
+===============
+
+It takes two to tango: Binary
+
+ASCII text, 1 byte = 8 bits and 256 flavors
+
+UNICODE means more than one
+
+The godfathers of markup: TeX and SGML
+
+The Nets Workhorse: HTML
+
+Markup, extensible versus structured, XML or YAML?
+
+WikiWiki and the dawn of reStructuredText
+
+
+
+<h2>Common Interface Structure Language</h2>
+
+<pre>
+add: taguri:cisl.org/ruby/:def
+   in:
+     x: !float 0
+     y: !float 0
+   thru:
+     x.+ y
+   out: !float 0
+   err:
+      errorname:
+        msg: add function failed
+        out: !float 0
+</pre>
+
+
+Fundemenal data stuctures: null, blob, scalars and collections.
+Null means nothigness. It is utterly abstract and requires special enoding
+is some oither chosen data structure format. For instance in ASCII null is
+represented by #00. A blob is really the mopst fundemental data structure.
+It is just a stream of binary data (or other base) essentially having no structure
+other than its size. The most commonly used blob is the Boolean type which
+is just a single bit: Yes/No, On/Off, True/false.
+Structured data on the other hand has two basic forms: the Scalar and the Collection. Scalar types
+are either Numerics, such as an Integer or Float of varying sizes (int32, float8, etc.),
+and the String in varying formats such as ASCII or UNICODE. There is also arguably timestamps
+although these are aren't alwasy considered fundemental and instead thought of as
+specialized collections of numerics. Collections come in a handful of forms:
+the Array or List, which is an ordered collection; a Set which is an array without
+order; the Hash or Map, also know as a Dictionary, which consits of key/value pairs,
+with no two keys (names) can be identical, and too are unordered.
+Hashes can be encoded by restrictive associative arrays (i.e. an array of two element arrays).
+This leads to Ordered Maps, or OMaps, which are Maps in which the order is significant.
+And finally there are Duplicate-key Maps or DMaps. Combined of course we get ODMaps.
+XML for instance is basically nothing more then a combination of Maps (attributes) and ODMaps (tags).
+
+In the end data structures all boil down to Collection in the forms of
+relation-hiearchies and Scalar consiting of Name, Type and Value. Relation-heiarchies
+are built by grouping, enumerating and naming. An Array enumerates a group of elements. A hash names
+a group of elements. Notice the tie between collections and scalars: they both partake of names.
+This is the missing key to all this. Where an array enumerates it in essense is simply naming its
+elements with a number. The distiniciton between and Array and a Hash then is purely conceptual and
+only takes meaning in implementation of certain methods of the Array. That is element 2 is in the
+second position, where as for a Map element "2" need not be. With this then we can leave the distinction behind.
+
+Implementation should come after the fact and need not be embedded in the data structure. This is anti-OOPS!
+But only at the level of the data itself. So we have but one type of "MetaCollection".
+Which is ordered or unordered only by the context in which it is addressed.
+Likewise a Map gives names to its elements. But often we need to name scalars in order to reference them,
+like YAML does with address and reference indicators. But this too can be seen as one in the same rather then
+seperate acts as is now the case. What is the end result. It is simply logical context relations.
+Take the example:
+
+  (Hello World)
+
+At heart it is a BLOB, just like everyihting else, but if we access/reference this data
+in a ASCII-String context then it is considered a list of characters. Psuedoly we might say
+
+  print ascii element 0 of [Hello World]    --> H
+  print word element 0 of [Hello World]     --> Hello
+  print blob element 0 of [Hello World]     --> Hello World
+
+  print word association Hello of [Hello World]   --> World
+  print word association World of [Hello World]   --> Hello
+
+  (message (Hello World))
+
+  (print (ascii (elem 0 @message)))
+  print word@Hello symbol@message
+
+  print @x :- (message @x)
+
+my window:
+  height: 5 in
+  width: 5 in
+  background: blue
+
+
+
+
+
+
+
+  </body>
+</html>

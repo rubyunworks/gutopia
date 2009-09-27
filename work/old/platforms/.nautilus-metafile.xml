@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<directory>
+  <file name="wise.rb" icon_position=""/>
+  <file name="gtk.rb" icon_position="118,34"/>
+  <file name="paragui.rb" icon_position="263,34"/>
+  <file name="gtk-dl.rb" icon_position="263,34"/>
+</directory>

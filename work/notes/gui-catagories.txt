@@ -1,0 +1,67 @@
+
+Categories of Widgetability
+---------------------------
+
+Editable
+
+  text entry
+
+  Examples:
+    Gtk::Entry
+    Gtk::Text
+
+
+Selectable
+
+  select from a list.
+  (note: could have multiple columns)
+  
+  Examples:
+    Gtk::List  (w/ singal selection)
+    Gtk::Combo (w/ read only)
+    GUtopIa::RadioBox
+
+
+Multi-Selectable
+  
+  select a number of possibilites from a list
+  (note: could have multiple columns)
+  
+  Examples:
+    Gtk::List (w/ multi selection)
+    GUtopIa::CheckBox
+
+
+Editable & Selectable
+
+  can be selected from list and/or edited
+
+  Examples:
+    Gtk::Combo
+
+
+Switchable
+
+  on/off, true/false binary input
+
+  Examples:
+    Gtk::Check
+
+
+Rangeable
+
+  specific means for inputing a numerical value within a range
+
+  Examples:
+    Gtk::ScrollBar
+
+
+Sectionable
+
+  provides seperate areas of layout
+  
+  Examples:
+    Gtk::Window
+    Gtk::Notebook
+
+

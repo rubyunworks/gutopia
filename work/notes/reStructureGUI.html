@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <style></style>
+  </head>
+  <body>
+
+<pre>
+
+  my_first_window: >
+
+    +-----------------+
+    |                 |
+    |                 |
+    +-----------------+
+
+
+  my_first_window[0][0].text = "Hello World"
+
+
+my_first_window:
+
+    +----------------------------------+
+    | Hello!                           |
+    +----------------------------------+
+    | What's your name? []             |
+    +----------------------------------+
+
+
+gui = GUtopIa::Load('example-template.GUt')
+name = gui.get(/name?/, TextInput, AFTER)
+name.text = "Enter you name here."
+name.maxlength = 40
+name.cell.bgcolor = GUtopIa::BLUE
+
+my_first_window.align = center
+
+my_style.font-decoration = italic
+
+my_first_cell.color = blue
+             .font-size = 10
+
+
+</pre>
+
+
+  </body>
+</html>

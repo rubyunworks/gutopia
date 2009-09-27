@@ -1,0 +1,67 @@
+GUtopIa is an ultra high-level GUI framework.
+It's ultra high-level allows it to overcome the major issue
+with a front-end to different back-ends, the LCD problem.
+
+All layout is based on the grid. Here is a very simple example.
+
+  layout = GUtopIa::Layout.new do
+    [ [ 'Name'  ], [ entry ] ]
+    [ [ 'Phone' ], [ entry ] ]
+    [ [ 'EMail' ], [ entry ] ]
+  end
+
+GUtopIa is smart too. It knows the raw strings in the grid
+cells are Labels.
+
+What about sizing? By default GUtopIa layouts the cells evenly,
+as best as it can to conform to the actual content.
+
+We can specify sizes and spacing either by traditional specification.
+
+  layout[0].size = 0.10
+
+Or when we build are layouts we can add guides.
+
+  layout = GUtopIa::Layout.new do
+    [ [ 0.10    ], [ 0.90  ] ],
+    [ [ 'Name'  ], [ entry ] ],
+    [ [ 'Phone' ], [ entry ] ],
+    [ [ 'EMail' ], [ entry ] ]
+  end
+
+Notice the first row. This will not be treated as a viewable row
+but as merely a guide for the other rows b/c all it's cells
+only specify a measure.
+
+Some other types of basic controls can be specified in a similar
+simple manner. For instance, a ListBox need only provide an Array.
+
+  sex = [ 'Male', 'Female', 'No Answer' ]
+
+  layout = GUtopIa::Layout.new do
+    [ [ 'Name'  ], [ entry ] ],
+    [ [ 'Phone' ], [ entry ] ],
+    [ [ 'EMail' ], [ entry ] ],
+    [ [ 'Sex'   ], [ sex   ] ]
+  end
+
+Providing a Hash is similar but setsup a mapped ListBox.
+
+Layouts can have layered specifications as well. This makes it easy
+to add more detail in a intuitive way. For instance we can specify colors.
+
+  layout.add do
+    [ [ black ] ], [ black_on_yellow ] ] * 4
+  end
+
+Perhaps we want to change up the fonts.
+
+  layout.add do
+    [ [ sans_serif ] ], [ monospace ] ] * 4
+  end
+
+Ultimately it would be nice if we could do interface overlays as well, but
+I fear this is outside the scope of almost all potential backends --perhaps one day!
+
+
+

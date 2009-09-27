@@ -1,0 +1,13 @@
+
+awindow:
+	type: Window
+  width: 200
+  height: 300
+  layout: grid
+  body:
+  	aradio:
+    	type: RadioButton
+    abutton:
+    	type: Button
+      text: Quit
+      
