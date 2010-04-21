@@ -5,9 +5,9 @@ with a front-end to different back-ends, the LCD problem.
 All layout is based on the grid. Here is a very simple example.
 
   layout = GUtopIa::Layout.new do
-    [ [ 'Name'  ], [ entry ] ]
-    [ [ 'Phone' ], [ entry ] ]
-    [ [ 'EMail' ], [ entry ] ]
+    [ [ 'Name'  ], [ Entry.new ] ]
+    [ [ 'Phone' ], [ Entry.new ] ]
+    [ [ 'EMail' ], [ Entry.new ] ]
   end
 
 GUtopIa is smart too. It knows the raw strings in the grid
@@ -23,11 +23,12 @@ We can specify sizes and spacing either by traditional specification.
 Or when we build are layouts we can add guides.
 
   layout = GUtopIa::Layout.new do
-    [ [ 0.10    ], [ 0.90  ] ],
-    [ [ 'Name'  ], [ entry ] ],
-    [ [ 'Phone' ], [ entry ] ],
-    [ [ 'EMail' ], [ entry ] ]
+    [ [ 'Name'  ], [ Entry.new ] ],
+    [ [ 'Phone' ], [ Entry.new ] ],
+    [ [ 'EMail' ], [ Entry.new ] ],
   end
+
+  layout.widths[ [ 0.10 ], [ 0.90 ] ]
 
 Notice the first row. This will not be treated as a viewable row
 but as merely a guide for the other rows b/c all it's cells

@@ -1,11 +1,18 @@
 module GUtopIa
 
-  class Label
-
-    attr :text
+  #
+  class Label < Widget
 
     def initialize(text)
-      @text = text
+      super(text)
+    end
+
+    def text
+      @adapter.text
+    end
+
+    def text=(string)
+      @adapter.text = string
     end
 
   end
