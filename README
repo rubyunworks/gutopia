@@ -1,23 +1,24 @@
-= GUtopIa# GUtopIa - Ruby's GUI Meta-API
-# Copyright (c) 2002 Thomas Sawyer
+= GUtopIa - A Ruby GUI Meta-API
 
-# GUtopIa is free software; you can redistribute it and/or modify
-# it under the terms of the GNU Lesser General Public License as published by
-# the Free Software Foundation; either version 2 of the License, or
-# (at your option) any later version.
+GUtopIa is an ultra-high level GUI API that sits on
+top of a variety of other backends (Qt, GTK, Cocoa, etc.)
 
-# GUtopIa is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Lesser General Public License for more details.
+The most significant issue that arises in trying to create
+a high level API the caters to a wide variety of backend
+systems is the LCD problem --Least Common Denominator.
+Because each backend system has it's own specific design
+and features it is not possible to support each backend
+in full since the "meta-API" can only support the features
+that all backends have in common. GUtopIa mitigates this
+issue by being an *ultra*-high level library. By building
+an API that focuses on very high level structures, each
+underlying backend is given room to implement those
+features in the way that best suites it strengths.
 
-# You should have received a copy of the GNU Lesser General Public License
-# along with GUtopIa; if not, write to the Free Software
-# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+That is concept in anycase. GUtopIa's overall design is
+still being developed and very little implementation has
+yet to take shape.
 
-project: GUtopIa
-version: 0.0.3
-release: 2002-08-27
-license: LGPL
-contact: Tom Sawyer, aka transami
-email  : transami@transami.net
+Take a look at the demo/ directory to get a understanding
+of the current API concepts.
+
