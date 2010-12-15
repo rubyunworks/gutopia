@@ -1,0 +1,20 @@
+--- 
+title  : GUtopIa
+summary: GUI Shangra-La
+contact: rubyworks-mailinglist@googlegroups.com
+license: Apache 2.0
+
+description:
+  GUtopIa is GUI framework for Ruby. It is an ultra-high level
+  library designed to deal in general GUI concepts implemented
+  by any backend.
+
+maintainers: 
+  - Trans <transfire@gmail.com>
+
+authors:
+  - Thomas Sawyer
+
+created  : 2005-06-02
+company  : RubyWorks
+copyright: (c) 2005 Thomas Sawyer

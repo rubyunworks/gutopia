@@ -1,0 +1,17 @@
+#!mast -x [A-Z][a-z]* .ruby bin lib man spec test [A-Z]*
+.ruby
+lib/gutopia/adapters/jruby/label.rb
+lib/gutopia/adapters/jruby/layout.rb
+lib/gutopia/adapters/jruby/window.rb
+lib/gutopia/adapters/jruby.rb
+lib/gutopia/controls/dropdown.rb
+lib/gutopia/controls/label.rb
+lib/gutopia/controls/layout.rb
+lib/gutopia/controls/listbox.rb
+lib/gutopia/controls/radio.rb
+lib/gutopia/controls/table.rb
+lib/gutopia/controls/widget.rb
+lib/gutopia/controls/window.rb
+lib/gutopia.rb
+README
+COPYING
